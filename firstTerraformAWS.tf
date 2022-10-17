@@ -1,3 +1,11 @@
+terraform {
+  backend "s3" {
+    bucket = "mybucketatawstest"
+    key    = "security/terraform.tfstate"
+    region = "ap-south-1"
+  }
+}
+
 provider "aws" {
  region = "ap-south-1"
  access_key = "AKIAV4HVQ5A4EBPLTF4M"
