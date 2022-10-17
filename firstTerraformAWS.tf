@@ -1,7 +1,7 @@
 provider "aws" {
  region = "ap-south-1"
  access_key = "AKIAV4HVQ5A4EBPLTF4M"
- secret_key = file("../../thiruvukol")
+ secret_key = file("./../thiruvukol")
 }
 
 resource "aws_instance" "firstInstanceAWS" {
